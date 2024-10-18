@@ -10,4 +10,34 @@ Features:<br>
 Live exchange rates via Fetch API.<br>
 Automatic conversions based on user input.<br>
 Responsive design for all devices.<br>
-This project showcases the practical application of APIs in modern web development.</p>
+This project showcases the practical application of APIs in modern web development.</p><br><br>
+<h2>Note-</h2>
+URL Structure:<br>
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/{apiVersion}/{endpoint}<br>
+<br>
+Formats:<br>
+<h3>Date</h3>
+<br>
+The date should either be latest or in YYYY-MM-DD format<br>
+<br>
+The Endpoints Supports HTTP GET Method and returns the data in two formats:<br>
+<br>
+/{endpoint}.json
+<br>
+/{endpoint}.min.json
+<br>
+<h3>Endpoints:</h3><br>
+<h3>/currencies</h3><br>
+Lists all the available currencies in prettified json format:<br>
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.json<br><br>
+
+Get a minified version of it:<br>
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.min.json<br>
+<br>
+
+<h3>/currencies/{currencyCode}</h3>
+Get the currency list with EUR as base currency:<br>
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json<br><br>
+
+Get the currency list with EUR as base currency on date 2024-03-06:<br>
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/eur.json<br><br>
