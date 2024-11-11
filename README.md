@@ -1,43 +1,54 @@
-# Currency-Convertor
-<p>
-The Currency Converter is a web application built using HTML, CSS, and JavaScript that allows users to convert between different currencies in real-time. The interface includes input fields for the amount and dropdowns for selecting the base and target currencies.<br><br>
+# Currency Converter App
 
-JavaScript is used to handle conversions, while the Fetch API retrieves live exchange rates from a third-party API. The conversion is triggered automatically when users enter an amount or change currencies, ensuring real-time updates with accurate rates.<br><br>
+A simple and responsive currency converter application built using HTML, CSS, and JavaScript. This app allows users to quickly convert between different currencies with real-time exchange rates, providing a convenient and user-friendly experience.
 
-CSS is used to create a responsive, user-friendly design, ensuring the app looks and works well on various devices, from desktops to mobile phones.<br><br>
+## Features
 
-Features:<br>
-Live exchange rates via Fetch API.<br>
-Automatic conversions based on user input.<br>
-Responsive design for all devices.<br>
-This project showcases the practical application of APIs in modern web development.</p><br><br>
-<h2>Note-</h2>
-URL Structure:<br>
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/{apiVersion}/{endpoint}<br>
-<br>
-Formats:<br>
-<h3>Date</h3>
-<br>
-The date should either be latest or in YYYY-MM-DD format<br>
-<br>
-The Endpoints Supports HTTP GET Method and returns the data in two formats:<br>
-<br>
-/{endpoint}.json
-<br>
-/{endpoint}.min.json
-<br>
-<h3>Endpoints:</h3><br>
-<h3>/currencies</h3><br>
-Lists all the available currencies in prettified json format:<br>
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.json<br><br>
+- **Real-time exchange rates**: Fetches the latest exchange rates from an API.
+- **User-friendly interface**: Intuitive design for seamless currency conversion.
+- **Responsive design**: Works on various devices, including desktops and mobile devices.
+- **Error handling**: Displays errors for invalid inputs or API issues.
 
-Get a minified version of it:<br>
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.min.json<br>
-<br>
+## Technologies Used
 
-<h3>/currencies/{currencyCode}</h3>
-Get the currency list with EUR as base currency:<br>
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json<br><br>
+- **HTML**: Structure and content of the app.
+- **CSS**: Styling and layout of the app.
+- **JavaScript**: Logic for currency conversion, data fetching from API, and error handling.
 
-Get the currency list with EUR as base currency on date 2024-03-06:<br>
-https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/eur.json<br><br>
+## How to Use
+
+1. Select the currencies you want to convert from and to.
+2. Enter the amount in the input field.
+3. Click the "Convert" button to see the result in the output field.
+
+## Setup
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/SaurabhKuntal110/Currency-Convertor.git
+   ```
+2. Open `index.html` in a web browser to use the app.
+
+## API Integration
+
+This app uses the [Exchange Rates API](https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies) to get real-time exchange rates. Make sure to add your API key in the JavaScript file if required.
+
+## Future Improvements
+
+- Add support for additional currencies.
+- Include historical exchange rate data.
+- Optimize for performance with larger datasets.
+
+## Contributing
+
+Feel free to fork this repository, submit issues, or make pull requests for improvements or additional features.
+
+## License
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+
+```
+
+This README provides an overview of the Currency Converter app, its features, setup, and technologies used. Let me know if you'd like to add any specifics!
