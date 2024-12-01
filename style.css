@@ -10,11 +10,8 @@ body{
     background-color: #f4e4ba;
 }
 h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    
+    font-size: 1.8rem;
+    text-align: center;
     padding: 0.5rem 0 0.5rem 0;
 }
 .container{
@@ -77,4 +74,18 @@ form button{
     background-color: #F06449;
     color: #ffff;
     cursor: pointer;
+}
+/*----------responsive---------------*/
+
+@media only screen and (max-width: 350px){
+    .container{
+        width: 36vh;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .form button{
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
 }
